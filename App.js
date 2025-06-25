@@ -13,7 +13,7 @@ export default function App() {
   };
 
   const filteredComments = comments.filter(c =>
-    c.keyword.includes(searchTerm)
+    c.keyword.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
